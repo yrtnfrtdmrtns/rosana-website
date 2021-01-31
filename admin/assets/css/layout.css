@@ -1,0 +1,223 @@
+@import url(bootstrap.min.css);
+@import url(font-awesome.min.css);
+@import url(animate.css);
+#login-body {
+  background-image: url("../img/background.jpeg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh; }
+  #login-body form {
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 45%; }
+    #login-body form label {
+      display: block;
+      font-weight: 300;
+      letter-spacing: 0.05em; }
+    #login-body form input {
+      width: 100%;
+      display: block;
+      margin-bottom: 15px;
+      background-color: transparent;
+      border-bottom: solid 1px #000;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      padding: 10px 0;
+      color: #000;
+      outline: none;
+      font-size: 14px; }
+    #login-body form button {
+      border: solid 1px #000;
+      background-color: transparent;
+      color: #000;
+      width: 100%;
+      padding: 10px;
+      margin: 15px 0; }
+      #login-body form button:hover {
+        background-color: #000;
+        color: #fff;
+        transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear; }
+
+#body-index section#header {
+  padding: 50px 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  background-color: #fff; }
+  #body-index section#header i {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 22px; }
+  #body-index section#header nav {
+    display: inline-block; }
+    #body-index section#header nav a {
+      margin-right: 35px;
+      color: #ccc;
+      text-decoration: none;
+      font-size: 16px; }
+      #body-index section#header nav a i {
+        font-size: 16px; }
+  #body-index section#header .menu {
+    float: right;
+    font-size: 14px;
+    margin-right: 0;
+    color: #ccc;
+    display: none; }
+#body-index section#menu-overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+  display: none; }
+  #body-index section#menu-overlay .wrapper {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    #body-index section#menu-overlay .wrapper .menu-close {
+      font-size: 24px;
+      margin-bottom: 25px;
+      cursor: pointer;
+      float: none;
+      text-align: center;
+      color: #fff; }
+      #body-index section#menu-overlay .wrapper .menu-close:hover {
+        color: #cecece;
+        transition: all 0.5s linear;
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear; }
+    #body-index section#menu-overlay .wrapper nav a {
+      display: block;
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      margin-bottom: 15px; }
+      #body-index section#menu-overlay .wrapper nav a:last-child {
+        margin-bottom: 0; }
+      #body-index section#menu-overlay .wrapper nav a:hover {
+        color: #000;
+        transition: all 0.5s linear;
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear; }
+
+section#main-panel {
+  margin-top: 125px; }
+  section#main-panel .btn {
+    box-sizing: border-box;
+    padding: 10px 15px;
+    color: #000;
+    background-color: #fff;
+    border: solid 1px #000;
+    margin-bottom: 50px;
+    border-radius: 0;
+    font-size: 12px; }
+    section#main-panel .btn i {
+      margin-left: 5px;
+      font-size: 14px; }
+    section#main-panel .btn:hover {
+      background-color: #000;
+      color: #fff;
+      transition: all 0.3s linear;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear; }
+  section#main-panel .item {
+    position: relative;
+    max-height: 250px !important;
+    overflow: hidden;
+    margin-bottom: 30px; }
+    section#main-panel .item img {
+      width: 100%;
+      display: block;
+      margin: 0; }
+    section#main-panel .item .item-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      text-align: center; }
+      section#main-panel .item .item-inner h4 {
+        color: #fff;
+        margin-top: 85px; }
+      section#main-panel .item .item-inner a {
+        text-decoration: none;
+        text-transform: uppercase; }
+        section#main-panel .item .item-inner a button {
+          background-color: transparent;
+          border: solid 1px #fff;
+          color: #fff;
+          padding: 10px; }
+          section#main-panel .item .item-inner a button:hover {
+            background-color: #fff;
+            color: #000;
+            transition: all 0.3s linear;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear; }
+      section#main-panel .item .item-inner:hover {
+        opacity: 1;
+        transition: all 0.5s linear;
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear; }
+  section#main-panel form label {
+    margin: 10px 0; }
+  section#main-panel form input {
+    display: block;
+    width: 500px;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    outline: none; }
+  section#main-panel form textarea {
+    display: block;
+    width: 500px;
+    height: 150px;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    resize: none;
+    outline: none; }
+  section#main-panel form button {
+    background-color: #fff;
+    border: solid 1px #000;
+    text-color: #000;
+    margin-top: 25px;
+    padding: 10px; }
+    section#main-panel form button:hover {
+      background-color: #000;
+      color: #fff;
+      transition: all 0.3s linear;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear; }
+
+@media screen and (max-width: 769px) {
+  #body-index section#header .menu {
+    display: block; }
+  #body-index section#header nav {
+    display: none; }
+  #body-index section#main-panel .btn {
+    width: 100%;
+    display: block; }
+  #body-index section#main-panel .item .item-inner {
+    opacity: 1; }
+    #body-index section#main-panel .item .item-inner h4 {
+      margin-top: 65px; }
+  #body-index section#main-panel form input {
+    width: 100%; }
+  #body-index section#main-panel form textarea {
+    width: 100%; } }
+
+/*# sourceMappingURL=layout.css.map */

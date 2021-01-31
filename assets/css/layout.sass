@@ -1,0 +1,232 @@
+@import "bootstrap.min.css", "font-awesome.min.css", "animate.css"
+
+* 
+	box-sizing: border-box
+	letter-spacing: .05em
+
+section#header
+	padding: 25px 0
+	background-color: #fff
+
+	i
+		color: #cecece
+
+		&:hover
+			cursor: pointer
+			color: #000
+			transition: all .5s linear
+			-webkit-transition: all .5s linear
+			-moz-transition: all .5s linear
+
+	h1
+		text-align: center
+		color: #000
+		letter-spacing: 10px
+		font-size: 16px
+		text-transform: uppercase
+		margin: 0
+
+	nav
+		text-align: right
+
+		a
+			margin-left: 15px
+
+section#menu-overlay
+	position: fixed
+	background-color: rgba(0,0,0,.5)
+	width: 100%
+	height: 100%
+	top: 0
+	z-index: 10
+	display: none
+
+	.wrapper
+		text-transform: uppercase
+		text-align: center
+		margin: 0
+		position: relative
+		top: 50%
+		-webkit-transform: translateY(-50%)
+		-ms-transform: translateY(-50%)
+		transform: translateY(-50%)
+
+		i
+			color: #fff
+			font-size: 24px
+			margin-bottom: 25px
+			cursor: pointer
+
+			&:hover
+				color: #000
+				transition: all .5s linear
+				-webkit-transition: all .5s linear
+				-moz-transition: all .5s linear
+
+		nav
+			a
+				display: block
+				color: #fff
+				font-size: 18px
+				text-decoration: none
+				margin-bottom: 15px
+
+				&:last-child
+					margin-bottom: 0
+
+				&:hover
+					color: #000
+					transition: all .5s linear
+					-webkit-transition: all .5s linear
+					-moz-transition: all .5s linear
+
+section#grid
+	.grid:after 
+		content: ''
+		display: block
+		clear: both
+
+	.grid-sizer,
+	.grid-item 
+		width: 33.333%
+
+
+	.grid-item 
+		float: left
+		position: relative
+
+		img 
+			display: block
+			max-width: 100%
+
+		.itemTitle
+			position: absolute
+			top: 0
+			left: 0
+			background-color: rgba(0,0,0,.5)
+			width: 100%
+			height: 100%
+			opacity: 0
+
+			&:hover
+				opacity: 1
+				transition: all .5s linear
+				-webkit-transition: all .5s linear
+				-moz-transition: all .5s linear
+
+
+			h2
+				color: #fff
+				text-transform: uppercase
+				text-align: center
+				margin: 0
+				position: relative
+				top: 50%
+				-webkit-transform: translateY(-50%)
+				-ms-transform: translateY(-50%)
+				transform: translateY(-50%)
+
+			p
+				color: #cecece
+				font-size: 12px
+				text-transform: uppercase
+				text-align: center
+				margin: 0
+				position: relative
+				top: 50%
+				-webkit-transform: translateY(-50%)
+				-ms-transform: translateY(-50%)
+
+				i
+				padding-right: 10px
+				transform: translateY(-50%)
+
+section#about
+	background-image: url('../img/avatar.jpg')
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	position: relative
+
+	.about-inner
+		color: #fff
+		position: relative
+		z-index: 5
+		margin-top: 25px
+		margin-bottom: 25px
+
+	.overlay
+		top: 0
+		left: 0
+		background-color: rgba(0,0,0,.4)
+		position: absolute
+		width: 100%
+		height: 100%
+		z-index: 3
+
+#body-project
+	background-color: #f1f1f1
+
+	#return
+		margin: 25px 0
+
+		.return
+			background-color: #cecece
+			padding: 10px
+			color: #000
+			border: none
+
+			&:hover
+				background-color: #000
+				color: #fff
+				transition: all .5s linear
+				-webkit-transition: all .5s linear
+				-moz-transition: all .5s linear
+
+	#item
+
+		.item
+
+			img
+				width: 100%
+
+			.item-information
+				background-color: #fff
+				padding: 25px
+
+				h5
+					color: #cecece
+					font-size: 12px
+					font-weight: 100
+					letter-spacing: .05em
+
+					i
+						padding-right: 5px
+
+#footer
+	padding: 25px 0
+
+	p
+		text-align: center
+		margin: 0
+
+@media screen and (max-width: 768px)	
+	#grid	
+		.grid-sizer,
+		.grid-item 
+			width: 50% !important
+
+	#footer
+		p
+			font-size: 12px
+			margin: 0
+
+@media screen and (max-width: 615px)	
+	#header
+		nav
+			display: none
+
+	#grid	
+		.grid-sizer,
+		.grid-item 
+			width: 100% !important
